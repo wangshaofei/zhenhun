@@ -63,7 +63,7 @@ class Member_model extends CI_Model {
     }
     
     function getFullMsgByUserId($id) {
-        $query = $this->db->query('select * from t_memberFullMsg m where m.id='.$id.';');
+        $query = $this->db->query('select * from v_memberfullmsg m where m.id='.$id.';');
         return $query->result_array();
     }
     
