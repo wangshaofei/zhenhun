@@ -702,9 +702,9 @@ INSERT INTO `t_smoke` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- 视图结构 `t_memberfullmsg`
+-- 视图结构 `v_memberfullmsg`
 --
-CREATE or replace view t_memberFullMsg (
+CREATE or replace view v_memberfullmsg (
 	id, 
 	country,
 	state,
