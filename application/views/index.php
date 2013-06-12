@@ -221,7 +221,7 @@
                                 <tr><td class="w40">会员:</td><td><?php echo $v->user_name; ?></td></tr>
                                 <tr><td>年龄:</td><td><?php echo $v->age; ?></td></tr>
                                 <tr><td>学历:</td><td><?php echo get_education($v->education); ?></td></tr>
-                                <tr><td>简介:</td><td><?php echo word_limiter($v->intro,5); ?></td></tr>
+                                <tr><td>简介:</td><td><?php echo character_limiter($v->intro,10); ?></td></tr>
                             </table>
                         </div>
                         <div class="dib"><input type="checkbox" /></div>

@@ -32,6 +32,7 @@ ul, ol,li{list-style: none;}
 .clearfix { display: inline-block; }
 html[xmlns] .clearfix { display: block; }  
 *html .clearfix { height: 1%; }  
+.transparent {filter:alpha(opacity=50); /*ie*/ -khtml-opacity:0.5; /* old safari*/ -moz-opacity:0.5; /* mozilla, netscape*/ opacity:0.5; /* fx safari , opera */}
 
 /*     header     */
 .header_bg {width:100%;height:59px; background:#2c83c6; padding-top:1px;}
@@ -188,3 +189,11 @@ td p.errorTip {color: red;}
 /* ===  admin   ======*/
 .admin.container input{border:1px solid #ccc;}
 .admin.container a{color:blue;}
+
+/*==== login model =============*/
+.bg_model { width:100%; height:100%; background:black; position: fixed; top:0; left:0; z-index: 100;}
+.login_form {border-radius:10px;width:400px; height:200px; position: fixed; top:100px; left:50%; margin-left:-200px; background: white; z-index:110;}
+.login_form table { width : 85%; margin: 0 auto;margin-top: 45px;} 
+.login_form td {text-align: left;}
+.login_form  input {line-height: 30px; height:30; border:1px solid #ccc; }
+.login_form .errorTip2 {width:auto; margin: 0;}
